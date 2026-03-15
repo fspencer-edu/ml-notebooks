@@ -1,13 +1,27 @@
-# Python side example for Unity ML-Agents
-# Build the scene in Unity, then connect from Python for training or inference.
-
 from mlagents_envs.environment import UnityEnvironment
+from mlagents_envs.base_env import ActionTuple
+import numpy as np
+import time
 
-env = UnityEnvironment(file_name=None)  # replace with built environment path when needed
+env = UnityEnvironment(file_name=None)
 env.reset()
 
-behavior_names = list(env.behavior_specs.keys())
-print("Behaviors:", behavior_names)
+behavior_name = list(env.behavior_specs.keys())[0]
+print("Behavior:", behavior_name)
 
-# Typical CLI training:
-# mlagents-learn config/ppo/3DBall.yaml --run-id=my_run
+for step in range(500):
+
+    decision_steps, terminal_steps = env.get_steps(behavior_name)
+
+    if len(decision_steps) > 0:
+        n_agents = len(decision_steps)
+
+        actions = np.random.uniform(-1,1,(n_agents,2)).astype(np.float32)
+
+        action_tuple = ActionTuple(continuous=actions)
+        env.set_actions(behavior_name, action_tuple)
+
+    env.step()
+    time.sleep(0.05)
+
+env.close()
