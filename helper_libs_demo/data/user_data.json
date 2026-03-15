@@ -1,0 +1,11 @@
+{
+  "name": "Fiona",
+  "course": "Python helper libraries",
+  "skills": [
+    "pathlib",
+    "json",
+    "requests"
+  ],
+  "active": true,
+  "score": 98
+}

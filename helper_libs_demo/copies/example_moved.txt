@@ -1,0 +1,2 @@
+Hello from pathlib!
+This file was created with Path.write_text().

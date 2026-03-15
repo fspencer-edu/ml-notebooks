@@ -1,0 +1,13 @@
+{
+  "project": "helper libraries demo",
+  "files_created": [
+    "user_data.json",
+    "example.txt",
+    "sample_2.txt",
+    "sample_1.txt",
+    "sample_0.txt"
+  ],
+  "image_files": [
+    "pillow_demo.png"
+  ]
+}
