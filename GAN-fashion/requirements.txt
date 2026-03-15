@@ -1,0 +1,5 @@
+tensorflow-datasets
+matplotlib
+numpy
+pillow
+importlib_resources
