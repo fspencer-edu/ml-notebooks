@@ -1,0 +1,23 @@
+artifact_path: /Users/fiona_spencer/Desk/ML/notebooks/ml_library/mlruns/0/models/m-a3cdec3abe2a43fc966d5076cd24d50f/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.11.14
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.8.0
+    skops_trusted_types: null
+mlflow_version: 3.10.1
+model_id: m-a3cdec3abe2a43fc966d5076cd24d50f
+model_size_bytes: 174584
+model_uuid: m-a3cdec3abe2a43fc966d5076cd24d50f
+prompts: null
+run_id: dd3729c985b04ea5bcbacb2142982a60
+utc_time_created: '2026-03-15 03:43:07.114044'
