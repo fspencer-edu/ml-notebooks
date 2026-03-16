@@ -1,0 +1,7 @@
+student_id,name,course,score,hours_studied,passed,city,exam_date,email,grade,course_avg_score
+101,Fiona,Python,92.0,12,True,Toronto,2026-03-01,fiona@example.com,A,88.5
+102,Alex,Python,85.0,9,True,Montreal,2026-03-01,alex@example.com,B,88.5
+103,Sam,SQL,78.0,7,False,Toronto,2026-03-02,sam@example.com,C,78.0
+104,Jordan,ML,95.0,15,True,Vancouver,2026-03-02,jordan@example.com,A,91.5
+105,Maya,SQL,,6,False,Toronto,2026-03-03,maya@example.com,Missing,78.0
+106,Noah,ML,88.0,11,True,Montreal,2026-03-03,noah@example.com,B,91.5
